@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <!-- <link href="/stylesheets/demo.css" rel="stylesheet"> -->
+    <link href="/stylesheets/output.css" rel="stylesheet">
+</head>
+<body class=" text-white bg-stone-950">
+    
+   <div class="main w-full h-full py-3 px-3 ">
+   <a href="/read" class="text-md text-blue-400">Read Users</a>
+    <h1 class="text-3xl mt-7">Create User</h1>
+    <form action="/create" class="flex gap-2 mt-3 " method="post">
+       
+        <input type="text" placeholder="Name" class="outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="name" required>
+        <input type="text" placeholder="Email" class="outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="email" required>
+        <input type="text" placeholder="Image-URL" class="outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="image">
+        <input type="submit" value="Create User" class="outline-none bg-blue-500 px-2 py-1.5 rounded-lg">
+    </form>
+
+   </div>
+</body>
+</html>

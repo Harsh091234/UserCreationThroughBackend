@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <link href="/stylesheets/demo.css" rel="stylesheet"> -->
+    <link href="/stylesheets/output.css" rel="stylesheet">
+</head>
+
+<body class=" text-white bg-stone-950">
+
+    <div class="main w-full h-full py-3 px-3 ">
+
+        <a href="/" class="text-md text-blue-400">back to home</a>
+        <h1 class="text-3xl mt-7">All Users</h1>
+      
+            <div class="Users mt-5 flex gap-3 flex-wrap">
+               <% if (users.length > 0) { %>
+                <% users.forEach(user=> { %>
+                    <div class="User  w-60 bg-stone-800 rounded-lg p-2.5">
+                        <div class="image h-38 w-full bg-green-500 rounded-lg overflow-hidden">
+                            <img class="w-full h-full object-cover object-center" src="<%= user.image %>" alt="">
+                        </div>
+                        <h1 class="text-lg mt-1.5"><%= user.name %></h1>
+                        <h1 class="text-sm text-stone-400"><%= user.email %></h4>
+                            <div class="flex mt-4 gap-4">
+                                <a href="/edit/<%= user._id %>" class="text-sm">Edit User</a>
+                                <a href="/delete/<%= user._id %>" class="text-sm text-red-400">Delete User</a>
+                            </div>
+                    </div>
+                <% }) %> 
+               <% } else { %>
+                
+                    <h1 class="mt-5 text-stone-400">No users found</h1>
+                 
+                    <% } %>
+    
+            </div>
+        
+            
+ 
+
+      
+         
+       
+    </div>
+</body>
+
+</html>

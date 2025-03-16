@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <!-- <link href="/stylesheets/demo.css" rel="stylesheet"> -->
+    <link href="/stylesheets/output.css" rel="stylesheet">
+</head>
+<body class=" text-white bg-stone-950">
+    
+   <div class="main w-full h-full py-3 px-3 ">
+   <a href="/" class="text-md text-blue-400">Go to homepage</a>
+    <h1 class="text-3xl mt-7">Update User</h1>
+    <form action="/update/<%= user._id %>" class="flex gap-2 mt-3 " method="post">
+       
+        <input type="text" placeholder="Name" class="outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="name" required value="<%= user.name %>">
+        <input type="text" placeholder="Email" class="outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="email" required  value="<%= user.email%>">
+        <input type="text" placeholder="Image-URL" class="outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="image" value="<%= user.image %>">
+        <input type="submit" value="Update User" class="outline-none bg-yellow-500 px-2 py-1.5 rounded-lg">
+    </form>
+
+   </div>
+</body>
+</html>
