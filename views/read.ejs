@@ -21,8 +21,8 @@
                <% if (users.length > 0) { %>
                 <% users.forEach(user=> { %>
                     <div class="User max-[431px]:w-full  w-60 bg-stone-800 rounded-lg p-2.5">
-                        <div class="image  h-38 w-full bg-stone-700 rounded-lg overflow-hidden">
-                            <img class="w-full h-full object-cover object-center" src="<%= user.image %>" alt="">
+                        <div class="image  h-45 w-full bg-stone-700 rounded-lg overflow-hidden">
+                            <img class="w-full h-full object-cover object-top" src="<%= user.image %>" alt="">
                         </div>
                         <h1 class="text-lg mt-1.5"><%= user.name %></h1>
                         <h1 class="text-sm text-stone-400"><%= user.email %></h4>
