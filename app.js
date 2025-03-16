@@ -14,7 +14,7 @@ const port = process.env.port || 3001;
 const mongoUrl = process.env.mongoUrl;
 const mongoOnlineUrl = process.env.mongoOnlineUrl;
 
-connectToMongoDB(mongoUrl);
+connectToMongoDB(mongoOnlineUrl);
 
 app.get('/', (req, res) => {
     res.render("index");  
