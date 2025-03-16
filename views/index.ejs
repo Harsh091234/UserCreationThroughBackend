@@ -10,16 +10,20 @@
 </head>
 <body class=" text-white bg-stone-950">
     
-   <div class="main w-full h-full py-3 px-3 ">
+   <div class="main w-full h-svh py-3 px-3 ">
    <a href="/read" class="text-md text-blue-400">Read Users</a>
     <h1 class="text-3xl mt-7">Create User</h1>
-    <form action="/create" class="flex gap-2 mt-3 " method="post">
+    <div class="w-full mt-3 ">
+        <form action="/create" class="flex gap-2 flex-wrap" method="post">
        
-        <input type="text" placeholder="Name" class="outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="name" required>
-        <input type="text" placeholder="Email" class="outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="email" required>
-        <input type="text" placeholder="Image-URL" class="outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="image">
-        <input type="submit" value="Create User" class="outline-none bg-blue-500 px-2 py-1.5 rounded-lg">
-    </form>
+            <input type="text" placeholder="Name" class="max-[770px]:w-[15rem] max-[760px]:w-[22.5rem] max-[752px]:w-[49.3%] max-[594px]:w-full outline-none bg-stone-700 px-2 py-1.5 rounded-lg w-52 " name="name" required>
+            <input type="text" placeholder="Email" class="max-[770px]:w-[15rem]
+            max-[760px]:w-[22.5rem] max-[752px]:w-[49.3%] max-[594px]:w-full outline-none bg-stone-700 px-2 py-1.5 rounded-lg w-52" name="email" required>
+            <input type="text" placeholder="Image-URL" class="max-[770px]:w-[15rem] max-[760px]:w-[22.5rem] max-[752px]:w-[49.3%] max-[594px]:w-full outline-none bg-stone-700 px-2 py-1.5 rounded-lg w-52" name="image">
+            <input type="submit" value="Create User" class="max-[752px]:w-1/4 max-[594px]:w-full outline-none bg-blue-500 px-2 py-1.5 rounded-lg">
+        </form>
+    </div>
+    
 
    </div>
 </body>

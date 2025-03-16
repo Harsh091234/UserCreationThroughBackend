@@ -13,12 +13,12 @@
    <div class="main w-full h-full py-3 px-3 ">
    <a href="/" class="text-md text-blue-400">Go to homepage</a>
     <h1 class="text-3xl mt-7">Update User</h1>
-    <form action="/update/<%= user._id %>" class="flex gap-2 mt-3 " method="post">
+    <form action="/update/<%= user._id %>" class="flex gap-2 mt-3 flex-wrap" method="post">
        
-        <input type="text" placeholder="Name" class="outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="name" required value="<%= user.name %>">
-        <input type="text" placeholder="Email" class="outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="email" required  value="<%= user.email%>">
-        <input type="text" placeholder="Image-URL" class="outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="image" value="<%= user.image %>">
-        <input type="submit" value="Update User" class="outline-none bg-yellow-500 px-2 py-1.5 rounded-lg">
+        <input type="text" placeholder="Name" class="max-[431px]:w-full outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="name" required value="<%= user.name %>">
+        <input type="text" placeholder="Email" class="max-[431px]:w-full outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="email" required  value="<%= user.email%>">
+        <input type="text" placeholder="Image-URL" class="max-[431px]:w-full outline-none bg-stone-700 px-2 py-1.5 rounded-lg" name="image" value="<%= user.image %>">
+        <input type="submit" value="Update User" class="max-[426px]:w-full outline-none bg-yellow-500 px-2 py-1.5 rounded-lg">
     </form>
 
    </div>
